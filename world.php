@@ -17,9 +17,10 @@ $country = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 //var_dump($country);
 
-$stmt = $conn->query("SELECT cities.name, cities.district, cities.population,
-FROM cities INNER JOIN countries ON cities.country_code=countries.code");
-$context = $stmt//->fetchAll(PDO::FETCH_ASSOC);
+$stmt = $conn->query("SELECT c.id,c.district, c.name as city, c.country_code, cs.name as
+country, c.population FROM cities c join countries cs on
+c.country_code = cs.code");
+$context = $stmt->fetchAll(PDO::FETCH_ASSOC);
 var_dump($context);
 
 //$stmt = $conn->query("SELECT continent FROM countries");
@@ -58,8 +59,8 @@ var_dump($context);
 </ul>
 
 <ul>
-<?php foreach ($context as $row): ?>
-  <li><?= $row['name'] . ' district ' . $row['district'] . ' population ' . $row['population']; ?></li>
+<?php foreach ($context as $row1): ?>
+  <li><?= $row1['city'] . ' district ' . $row1['district'] . ' population ' . $row1['population']; ?></li>
   <!--<li><//?=$row['name']. ' is in ' . $row['continent']; ?></li>-->
 <?php endforeach; ?>
 </ul>
