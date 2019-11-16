@@ -6,7 +6,6 @@ window.onload = function(){
     var lookupBttn = document.getElementById("lookup");
     var lookupcBttn = document.getElementById("lookupc");
     var Result = document.getElementById("result");
-    var Result1 = document.getElementById("result1");
    
 
     lookupBttn.addEventListener('click',function(e){
@@ -58,7 +57,7 @@ window.onload = function(){
          //Create request object
         xmlHttp1  = new XMLHttpRequest();
     
-        url =  'world.php?country=&context=cities';
+        url =  'world.php?country=Jamaica&context=cities'+ context;
         //url = 'index.php?search=' + search;
         
         //Receive a request
@@ -71,13 +70,13 @@ window.onload = function(){
     });
     
      function Request2(){
-        if((xmlHttp1.readyState === XMLHttpRequest.DONE) && (xmlHttp1.status === 200))
+        if((xmlHttp1.readyState === XMLHttpRequest.DONE) && (xmlHttp.status === 200))
         {
             
             //Output response
            //var response = xmlHttp.responseText;
            //alert(response);
-           Result1.innerHTML = xmlHttp1.responseText;
+           Result.innerHTML = xmlHttp.responseText;
         }
        
     }
