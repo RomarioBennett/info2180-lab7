@@ -1,0 +1,14 @@
+<ul>
+    
+<?phpforeach ($country as $row): ?>
+  <li><?= $row['name'] . ' is ruled by ' . $row['head_of_state']; ?></li>
+  <!--<li><//?=$row['name']. ' is in ' . $row['continent']; ?></li>-->
+<?php endforeach; ?>
+</ul>
+
+<ul>
+<?php foreach ($context as $row1): ?>
+  <li><?= $row1['city'] . ' district ' . $row1['district'] . ' population ' . $row1['population']; ?></li>
+  <!--<li><//?=$row['name']. ' is in ' . $row['continent']; ?></li>-->
+<?php endforeach; ?>
+</ul></html>
