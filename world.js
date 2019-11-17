@@ -52,12 +52,13 @@ window.onload = function(){
         
 
         
-        var context = document.getElementById("country").value;
+        var country = document.getElementById("country").value;
         
          //Create request object
         xmlHttp1  = new XMLHttpRequest();
     
-        url =  'world.php?country=Jamaica&context=cities'+ context;
+        //url =  'world.php?country='+country+'&context=cities';
+        url = 'world.php?country='+country+'&context=cities';
         //url = 'index.php?search=' + search;
         
         //Receive a request

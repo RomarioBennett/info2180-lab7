@@ -28,6 +28,9 @@ $context = $stmt->fetchAll(PDO::FETCH_ASSOC);
 //var_dump($continent);
 
 ?>
+
+<?php if(!(isset($_GET['context']))):?>
+
 <table>
     <div id="main">
 <thead>
@@ -51,3 +54,28 @@ $context = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 </table>
 
+<?php else : ?>
+
+<table>
+    <div id="main1">
+<thead>
+   <th>City Name</th>
+   <th>Districtt</th>
+   <th>Population</th>
+   
+</thead>
+<tbody>
+    <?php foreach ($context as $row): ?>
+ <tr>
+     <td> <?= $row['city']?></td>
+     <td> <?=$row['district']?></td>
+     <td> <?=$row['population']?></td>
+    
+     
+ </tr>   
+  <?php endforeach; ?>  
+    
+</tbody>
+</div>
+</table>
+<?php endif; ?>
