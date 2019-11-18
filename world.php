@@ -21,7 +21,7 @@ $country = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $stmt = $conn->query("SELECT c.id,c.district, c.name as city, c.country_code, cs.name as
 country, c.population FROM cities c join countries cs on
-c.country_code = cs.code");
+c.country_code = cs.code WHERE cs.name LIKE '%$context%'");
 $context = $stmt->fetchAll(PDO::FETCH_ASSOC);
 //var_dump($context);
 
@@ -62,7 +62,7 @@ $context = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div id="main1">
 <thead>
    <th>City Name</th>
-   <th>Districtt</th>
+   <th>District</th>
    <th>Population</th>
    
 </thead>
