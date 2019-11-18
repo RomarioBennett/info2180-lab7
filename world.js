@@ -58,7 +58,8 @@ window.onload = function(){
         xmlHttp1  = new XMLHttpRequest();
     
         //url =  'world.php?country='+country+'&context=cities';
-        url = 'world.php?country='+country+'&context=cities';
+        url = 'world.php?country='+country+'&context='+country;
+        //url = 'world.php?comtext='+ city;
         //url = 'index.php?search=' + search;
         
         //Receive a request
@@ -71,13 +72,13 @@ window.onload = function(){
     });
     
      function Request2(){
-        if((xmlHttp1.readyState === XMLHttpRequest.DONE) && (xmlHttp.status === 200))
+        if((xmlHttp1.readyState === XMLHttpRequest.DONE) && (xmlHttp1.status === 200))
         {
             
             //Output response
            //var response = xmlHttp.responseText;
            //alert(response);
-           Result.innerHTML = xmlHttp.responseText;
+           Result.innerHTML = xmlHttp1.responseText;
         }
        
     }

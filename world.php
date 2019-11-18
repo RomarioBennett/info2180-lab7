@@ -5,6 +5,8 @@ $password = 'password';
 $dbname = 'world';
 $country = $_GET['country'];
 $context = $_GET['context'];
+var_dump($context);
+var_dump($country);
 //$continent = $_GET['continent'];
 
 $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
