@@ -33,8 +33,8 @@ $context = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <?php if(!(isset($_GET['context']))):?>
 
-<table>
-    <div id="main">
+<table  class ="table1">
+    <div>
 <thead>
    <th>Country Name</th>
    <th>Continent</th>
@@ -58,7 +58,7 @@ $context = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <?php else : ?>
 
-<table>
+<table class=table2>
     <div id="main1">
 <thead>
    <th>City Name</th>

@@ -1,5 +1,31 @@
 /* Add your own styles */
 
+.table1 {
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.table1 thead {
+  background: #1C6EA4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  border-bottom: 2px solid #444444;
+}
+.table1 thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #D0E4F5;
+}
+.table1 tr:nth-child(even) {
+  background: #D0E4F5;
+}
+
+
 .header {
   background-color: #A9A9A9;
   padding: 20px;
@@ -16,3 +42,107 @@
 
 	margin: auto;
 }
+
+
+
+
+
+
+.table2 {
+  border: 1px solid 	#4B0082;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.table2 thead {
+  background: 	#8B008B;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  border-bottom: 2px solid #444444;
+}
+.table2 thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #8B008B;
+}
+.table2 tr:nth-child(even) {
+  background: #DDA0DD;
+}
+
+
+.header {
+  background-color: #A9A9A9;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.bar{
+    text-align:center;
+}
+
+#main {
+	width: 780px;
+
+	margin: auto;
+}
+
+
+.lookupB {
+	box-shadow: 3px 4px 0px 0px #1564ad;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.lookupB:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+
+.lookupB:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.lookupcB {
+	box-shadow: 3px 4px 0px 0px #6816ab;
+	background:linear-gradient(to bottom, #b87aff 5%, #c739e3 100%);
+	background-color:#b87aff;
+	border-radius:5px;
+	border:1px solid #a634c2;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9654cc;
+}
+.lookupcB:hover {
+	background:linear-gradient(to bottom, #c739e3 5%, #b87aff 100%);
+	background-color:#c739e3;
+}
+.lookupcB:active {
+	position:relative;
+	top:1px;
+}
+
+     
